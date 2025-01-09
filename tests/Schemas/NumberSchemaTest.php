@@ -1,11 +1,11 @@
 <?php
 
-namespace StyleShit\Zod\Tests\Schemas;
+namespace J7\Zod\Tests\Schemas;
 
-use StyleShit\Zod\Exceptions\BigNumberException;
-use StyleShit\Zod\Exceptions\InvalidNumberException;
-use StyleShit\Zod\Exceptions\SmallNumberException;
-use StyleShit\Zod\Zod as Z;
+use J7\Zod\Exceptions\BigNumberException;
+use J7\Zod\Exceptions\InvalidNumberException;
+use J7\Zod\Exceptions\SmallNumberException;
+use J7\Zod\Zod as Z;
 
 it('should parse numbers', function () {
     // Act & Assert.

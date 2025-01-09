@@ -1,11 +1,11 @@
 <?php
 
-namespace StyleShit\Zod\Tests\Schemas;
+namespace J7\Zod\Tests\Schemas;
 
-use StyleShit\Zod\Exceptions\InvalidStringException;
-use StyleShit\Zod\Exceptions\LongStringException;
-use StyleShit\Zod\Exceptions\ShortStringException;
-use StyleShit\Zod\Zod as Z;
+use J7\Zod\Exceptions\InvalidStringException;
+use J7\Zod\Exceptions\LongStringException;
+use J7\Zod\Exceptions\ShortStringException;
+use J7\Zod\Zod as Z;
 
 it('should parse a string', function () {
     // Act.

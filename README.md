@@ -7,7 +7,7 @@ A [Zod](https://github.com/colinhacks/zod)-like implementation in PHP, inspired 
 The usage is pretty simple & straightforward, and is very similar to the original Zod library:
 
 ```php
-use StyleShit\Zod\Zod as Z;
+use J7\Zod\Zod as Z;
 
 // Create the schema.
 $schema = Z::object([

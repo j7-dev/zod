@@ -1,10 +1,10 @@
 <?php
 
-namespace StyleShit\Zod\Tests\Schemas;
+namespace J7\Zod\Tests\Schemas;
 
-use StyleShit\Zod\Exceptions\InvalidObjectException;
-use StyleShit\Zod\Exceptions\InvalidObjectSchemaException;
-use StyleShit\Zod\Zod as Z;
+use J7\Zod\Exceptions\InvalidObjectException;
+use J7\Zod\Exceptions\InvalidObjectSchemaException;
+use J7\Zod\Zod as Z;
 
 it('should parse an object', function () {
     // Arrange.

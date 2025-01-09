@@ -1,25 +1,55 @@
 {
-    "require-dev": {
-        "laravel/pint": "^1.2",
-        "pestphp/pest": "^1.22"
-    },
-    "scripts": {
-        "lint": "pint",
-        "test": "pest"
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "StyleShit\\Zod\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "StyleShit\\Zod\\Tests\\": "tests"
-        }
-    }
-  }
+	"name": "j7-dev/zod",
+	"version": "0.3.2",
+	"description": "A Zod-like implementation in PHP.",
+	"homepage": "https://github.com/j7-dev",
+	"type": "library",
+	"keywords": [
+		"zod",
+		"type guard",
+		"type safety",
+		"type validation"
+	],
+	"license": "GPL-3.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"J7\\Zod\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"J7\\Zod\\Tests\\": "tests"
+		}
+	},
+	"authors": [
+		{
+			"name": "JerryLiu",
+			"email": "j7.dev.gg@gmail.com",
+			"homepage": "https://github.com/j7-dev",
+			"role": "Developer"
+		}
+	],
+	"minimum-stability": "dev",
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"phpstan/extension-installer": true
+		}
+	},
+	"require-dev": {
+		"pestphp/pest": "^1.22",
+		"squizlabs/php_codesniffer": "@stable",
+		"wp-coding-standards/wpcs": "@stable",
+		"dealerdirect/phpcodesniffer-composer-installer": "@stable",
+		"phpcompatibility/php-compatibility": "@stable",
+		"phpstan/phpstan": "^1.11",
+		"php-stubs/woocommerce-stubs": "^9.0",
+		"php-stubs/wordpress-stubs": "^6.5",
+		"phpstan/extension-installer": "^1.4"
+	},
+	"scripts": {
+		"lint": "phpcs",
+		"test": "pest"
+	}
+}
